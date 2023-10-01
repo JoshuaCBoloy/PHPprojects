@@ -3,7 +3,7 @@
 <title>Hello World</title>
 <body>
  <?php echo "Hello, World!";
-      echo "Josh lala";?>
+      echo "Josh";?>
 </body>
 </html>
 
