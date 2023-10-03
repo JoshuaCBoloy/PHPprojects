@@ -29,8 +29,6 @@ echo "<br>";
 echo "<br>";
 define("HANDSOME", "JOSHUA CASAS BOLOY");
 echo HANDSOME;
-
-
   ?>
 </body>
 </html>
