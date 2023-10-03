@@ -45,9 +45,7 @@ $four =
 $capital = 67;
 print("Variable capital is $capital<br>");
 print("Variable CaPiTaL is $CaPiTaL<br>");
-?>
-</body>
-</html>
+
 
 $greeting = "Welcome to PHP!";
 
@@ -58,4 +56,8 @@ if (3 == 2 + 1)
  print("Good - I haven't totally");
  print("lost my mind.<br>");
 }
+?>
+</body>
+</html>
+
 
