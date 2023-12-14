@@ -5,11 +5,11 @@ $id = $_GET["id"];
 
 if(isset($_POST['submit'])) {
   $username = $_POST['username'];
-  $password = $_POST['password'];
-  $role = $_POST['role'];
+  $email = $_POST['email'];
+ 
   
 
-  $sql = "UPDATE `users` SET `username`='$username',`password`='$password',`role`='$role' WHERE id = $id";
+  $sql = "UPDATE `users` SET `username`='$username',`email`='$email' WHERE id = $id";
 
   $result = mysqli_query($conn, $sql);
 
@@ -64,19 +64,12 @@ if(isset($_POST['submit'])) {
                </div>
 
                <div class="col">
-                  <label class="form-label">Password:</label>
-                  <input type="password" class="form-control" name="password" 
-                  value="<?php echo $row['password'] ?>">
+                  <label class="form-label">Email:</label>
+                  <input type="email" class="form-control" name="email" 
+                  value="<?php echo $row['email'] ?>">
                </div>
             </div>
 
-            <div class="mb-3">
-                <label class="form-label">Role:</label>
-                <select class="form-control" name="role" required>
-                <option value="user" <?php echo ($row['role'] == 'user') ? 'selected' : ''; ?>>User</option>
-               <option value="admin" <?php echo ($row['role'] == 'admin') ? 'selected' : ''; ?>>Admin<option>
-              </select>
-              </div>
 
             <div>
                <button type="submit" class="btn btn-success" name="submit">Update</button>

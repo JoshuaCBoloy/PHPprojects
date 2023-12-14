@@ -37,8 +37,7 @@
         <tr>
           <th scope="col">ID</th>
           <th scope="col">Username</th>
-          <th scope="col">Password</th>
-          <th scope="col">Role</th>
+          <th scope="col">Email</th>
           <th scope="col">Action</th>
         </tr>
       </thead>
@@ -53,8 +52,7 @@
           <tr>
             <td><?php echo $row["id"] ?></td>
             <td><?php echo $row["username"] ?></td>
-            <td><?php echo $row["password"] ?></td>
-            <td><?php echo $row["role"] ?></td>
+            <td><?php echo $row["email"] ?></td>
             <td>
               <a href="edit.php?id=<?php echo $row["id"] ?>" class="link-dark"><i class="fa-solid fa-pen-to-square fs-5 me-3"></i></a>
               <a href="delete.php?id=<?php echo $row["id"] ?>" class="link-dark"><i class="fa-solid fa-trash fs-5"></i></a>

@@ -4,10 +4,10 @@ include "db_conn.php";
 
 if(isset($_POST['submit'])) {
   $username = $_POST['username'];
-  $password = $_POST['password'];
-  $role = $_POST['role'];
+  $email = $_POST['email'];
+ 
   
-  $sql = "INSERT INTO `users`(`id`, `username`, `password`, `role`) VALUES (NULL,'$username','$password','$role')";
+  $sql = "INSERT INTO `users`(`id`, `username`, `email`) VALUES (NULL,'$username','$email')";
 
   $result = mysqli_query($conn, $sql);
 
@@ -52,17 +52,9 @@ if(isset($_POST['submit'])) {
                </div>
 
                <div class="col">
-                  <label class="form-label">Password:</label>
-                  <input type="password" class="form-control" name="password" placeholder="Password">
+                  <label class="form-label">Email:</label>
+                  <input type="email" class="form-control" name="email" placeholder="Email">
                </div>
-            </div>
-
-            <div class="mb-3">
-              <label class="form-label">Role:</label>
-              <select class="form-control" name="role" required>
-              <option value="user">User</option>
-              <option value="admin">Admin</option>
-              </select>
             </div>
 
         

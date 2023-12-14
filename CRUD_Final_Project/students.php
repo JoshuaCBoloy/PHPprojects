@@ -40,6 +40,7 @@
           <th scope="col">Email</th>
           <th scope="col">Date of Birth</th>
           <th scope="col">Address</th>
+          <th scope="col">Action</th>
         </tr>
       </thead>
       <tbody>
